@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --color-nosferatu: #292b36;
+  --color-aro: #454759;
+  --color-buffy: #ff79c6;
+  --color-dracula: #bc93f9;
+  --color-voncount: #6273a4;
+}
+
+@layer components {
+  .dracula-card {
+    background-color: var(--color-nosferatu);
+    color: var(--color-buffy);
+    border: 1px solid var(--color-aro);
+  }
+}
+
+@layer utilities {
+  .dracula-text-primary {
+    color: var(--color-dracula);
+  }
+  .dracula-text-secondary {
+    color: var(--color-buffy);
+  }
+  .dracula-bg-primary {
+    background-color: var(--color-nosferatu);
+  }
+  .dracula-bg-secondary {
+    background-color: var(--color-aro);
+  }
+}

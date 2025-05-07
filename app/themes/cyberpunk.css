@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --color-neon-blue: #0ff;
+  --color-dark-purple: #211a3d;
+  --color-electric-pink: #ff00ff;
+  --color-tech-gray: #4a4a4a;
+  --color-circuit-green: #00ff00;
+}
+
+@layer components {
+  .cyberpunk-card {
+    background-color: var(--color-dark-purple);
+    color: var(--color-neon-blue);
+    border: 2px dashed var(--color-electric-pink);
+  }
+}
+
+@layer utilities {
+  .cyberpunk-text-primary {
+    color: var(--color-electric-pink);
+  }
+  .cyberpunk-text-secondary {
+    color: var(--color-neon-blue);
+  }
+  .cyberpunk-bg-primary {
+    background-color: var(--color-tech-gray);
+  }
+  .cyberpunk-bg-secondary {
+    background-color: var(--color-dark-purple);
+  }
+}

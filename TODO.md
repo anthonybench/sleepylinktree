@@ -1,0 +1,6 @@
+- organize fonts
+- readme
+- setup remote repository
+- favicon
+- context provider envi template
+- metadata & opengraph
