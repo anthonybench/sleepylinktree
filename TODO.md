@@ -2,5 +2,5 @@
 - readme
 - setup remote repository
 - favicon
-- context provider envi template
+- context provider envi doc
 - metadata & opengraph

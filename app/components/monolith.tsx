@@ -1,25 +1,15 @@
 import { useTheme } from "@/app/themes/switch-board";
+import ThemeSelector from "@/app/components/theme-selector";
+import Header from "@/app/components/header";
 
-const BentoGrid = () => {
+const Monolith = () => {
   const theme = useTheme().theme;
   return (
-    // <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-    //   <div className={`${theme}-card p-4 rounded-lg`}>Item 1</div>
-    //   <div className={`${theme}-card p-4 rounded-lg`}>Item 2</div>
-    //   <div className={`${theme}-card p-4 rounded-lg`}>Item 3</div>
-    //   <div className={`${theme}-card p-4 rounded-lg`}>Item 4</div>
-    //   <div className={`${theme}-card p-4 rounded-lg`}>Item 5</div>
-    //   <div className={`${theme}-card p-4 rounded-lg`}>Item 6</div>
-    // </div>
-
-    <div className="bg-gray-900 py-24 sm:py-32">
+    <div className={`${theme}-bg-primary py-24 sm:py-32`}>
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
-        <h2 className="text-base/7 font-semibold text-indigo-400">
-          Deploy faster
-        </h2>
-        <p className="mt-2 max-w-lg text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-          Everything you need to deploy your app
-        </p>
+        <Header />
+
+        {/* --- */}
         <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
           <div className="flex p-px lg:col-span-4">
             <div className="overflow-hidden rounded-lg bg-gray-800 ring-1 ring-white/15 max-lg:rounded-t-[2rem] lg:rounded-tl-[2rem]">
@@ -108,8 +98,9 @@ const BentoGrid = () => {
             </div>
           </div>
         </div>
+        {/* --- */}
       </div>
     </div>
   );
 };
-export default BentoGrid;
+export default Monolith;

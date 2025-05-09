@@ -1,23 +1,28 @@
 "use client";
 import { createContext, useState, ReactNode, useContext } from "react";
 
-// TODO: later on (now now), find a way to switch `<theme>-card` (and so forth) to `card`, for shorter classname typing in your components
+// Theme Object Schema
+type ThemeType = {
+  displayName: string;
+  codeName: string;
+  type: "light" | "dark";
+};
 
 //───Themes───────────────────
-export const themes = [
-  { displayName: "Dracula", codeName: "dracula" },
-  { displayName: "Cyberpunk", codeName: "cyberpunk" },
-  { displayName: "Forest", codeName: "forest" },
+export const themes: ThemeType[] = [
+  { displayName: "Dracula", codeName: "dracula", type: "dark" },
+  { displayName: "Aurora", codeName: "aurora", type: "light" },
+  { displayName: "Meadow", codeName: "meadow", type: "light" },
+  { displayName: "Abyss", codeName: "abyss", type: "dark" },
 ];
 export const defaultTheme = "dracula"; // use codeName
 //────────────────────────────
 
-// lLoad Themes
-async function loadThemes(themes: { displayName: string; codeName: string }[]) {
+// Load Themes
+async function loadThemes(themes: ThemeType[]) {
   for (const theme of themes) {
     try {
       await import(`@/app/themes/${theme.codeName}.css`);
-      console.log(`Loaded theme: ${theme.codeName}`);
     } catch (error) {
       console.error(`Failed to load theme ${theme}:`, error);
     }
@@ -55,4 +60,13 @@ export const useTheme = () => {
     throw new Error("useTheme must be used within a ThemeProvider");
   }
   return context;
+};
+
+// Fetch Utility
+export const fetchTheme = (theme: string) => {
+  const themeObj = themes.find((t) => t.codeName === theme);
+  if (!themeObj) {
+    throw new Error(`Theme ${theme} not found`);
+  }
+  return themeObj;
 };

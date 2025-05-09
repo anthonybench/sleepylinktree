@@ -6,13 +6,23 @@
   --color-buffy: #ff79c6;
   --color-dracula: #bc93f9;
   --color-voncount: #6273a4;
+  --color-cullen: #f8f8f3;
 }
 
 @layer components {
-  .dracula-card {
-    background-color: var(--color-nosferatu);
-    color: var(--color-buffy);
-    border: 1px solid var(--color-aro);
+  .dracula-theme-selector-button {
+    background-color: var(--color-aro);
+    color: var(--color-dracula);
+    outline-style: solid;
+    outline-width: 1px;
+    outline-offset: -1px;
+    outline-color: var(--color-voncount);
+  }
+  .dracula-theme-selector-button:focus {
+    outline-style: solid;
+    outline-width: 2px;
+    outline-offset: -2px;
+    outline-color: var(--color-dracula);
   }
 }
 
@@ -23,10 +33,20 @@
   .dracula-text-secondary {
     color: var(--color-buffy);
   }
+  .dracula-text-muted-dark {
+    color: var(--color-voncount);
+  }
+  .dracula-text-muted-light {
+    color: var(--color-cullen);
+  }
   .dracula-bg-primary {
     background-color: var(--color-nosferatu);
   }
   .dracula-bg-secondary {
     background-color: var(--color-aro);
+  }
+  .dracula-focus-option[data-focus] {
+    background-color: var(--color-nosferatu);
+    color: var(--color-buffy);
   }
 }

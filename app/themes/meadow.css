@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sunshine: #fffde7; /* Light background */
+  --color-daisy: #fff9c4; /* Secondary background */
+  --color-leaf: #8bc34a; /* Primary accent */
+  --color-sky: #64b5f6; /* Secondary accent */
+  --color-grass: #aed581; /* Muted dark */
+  --color-earth: #3e2723; /* Muted light (dark text) */
+}
+
+@layer components {
+  .meadow-theme-selector-button {
+    background-color: var(--color-daisy);
+    color: var(--color-sky);
+    outline-style: solid;
+    outline-width: 1px;
+    outline-offset: -1px;
+    outline-color: var(--color-daisy);
+  }
+  .meadow-theme-selector-button:focus {
+    outline-style: solid;
+    outline-width: 2px;
+    outline-offset: -2px;
+    outline-color: var(--color-sky);
+  }
+}
+
+@layer utilities {
+  .meadow-text-primary {
+    color: var(--color-sky);
+  }
+  .meadow-text-secondary {
+    color: var(--color-leaf);
+  }
+  .meadow-text-muted-dark {
+    color: var(--color-grass);
+  }
+  .meadow-text-muted-light {
+    color: var(--color-earth);
+  }
+  .meadow-bg-primary {
+    background-color: var(--color-sunshine);
+  }
+  .meadow-bg-secondary {
+    background-color: var(--color-daisy);
+  }
+  .meadow-focus-option[data-focus] {
+    background-color: var(--color-sunshine);
+    color: var(--color-earth);
+  }
+}
