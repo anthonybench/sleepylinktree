@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+/* { displayName: "Solarized Light", codeName: "solarized-light", type: "light" }, */
+
+@theme {
+  --color-solarized-base03: #002b36;
+  --color-solarized-base02: #073642;
+  --color-solarized-base01: #586e75;
+  --color-solarized-base00: #657b83;
+  --color-solarized-base0: #839496;
+  --color-solarized-base1: #93a1a1;
+  --color-solarized-base2: #eee8d5;
+  --color-solarized-base3: #fdf6e3;
+  --color-solarized-yellow: #b58900;
+  --color-solarized-orange: #cb4b16;
+  --color-solarized-red: #dc322f;
+  --color-solarized-magenta: #d33682;
+  --color-solarized-violet: #6c71c4;
+  --color-solarized-blue: #268bd2;
+  --color-solarized-cyan: #2aa198;
+  --color-solarized-green: #859900;
+}
+
+@layer components {
+  .solarized-light-theme-selector-button {
+    background-color: var(--color-solarized-base2);
+    color: var(--color-solarized-blue);
+    outline-style: solid;
+    outline-width: 1px;
+    outline-offset: -1px;
+    outline-color: var(--color-solarized-base1);
+  }
+  .solarized-light-theme-selector-button:focus {
+    outline-style: solid;
+    outline-width: 2px;
+    outline-offset: -2px;
+    outline-color: var(--color-solarized-blue);
+  }
+  .solarized-light-bento-item-outline {
+    outline: 0.5px solid var(--color-solarized-base1);
+  }
+  .solarized-light-focus-option[data-focus] {
+    background-color: var(--color-solarized-base3);
+    color: var(--color-solarized-green);
+  }
+}
+
+@layer utilities {
+  .solarized-light-text-primary {
+    color: var(--color-solarized-blue);
+  }
+  .solarized-light-text-secondary {
+    color: var(--color-solarized-green);
+  }
+  .solarized-light-text-muted {
+    color: var(--color-solarized-base0);
+  }
+  .solarized-light-bg-primary {
+    background-color: var(--color-solarized-base3);
+  }
+  .solarized-light-bg-secondary {
+    background-color: var(--color-solarized-base2);
+  }
+}

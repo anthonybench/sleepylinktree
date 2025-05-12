@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+/* { displayName: "Gruvbox Dark", codeName: "gruvbox-dark", type: "dark" }, */
+
+@theme {
+  --color-gruvbox-bg0_h: #282828;
+  --color-gruvbox-bg0_s: #1d2021;
+  --color-gruvbox-bg1: #3c3836;
+  --color-gruvbox-bg2: #504945;
+  --color-gruvbox-bg3: #665c54;
+  --color-gruvbox-bg4: #7c6f64;
+  --color-gruvbox-fg0: #fdf6e3;
+  --color-gruvbox-fg1: #ebdbb2;
+  --color-gruvbox-fg2: #d5c4a1;
+  --color-gruvbox-fg3: #b8bb26;
+  --color-gruvbox-fg4: #a89984;
+  --color-gruvbox-red: #cc241d;
+  --color-gruvbox-green: #98971a;
+  --color-gruvbox-yellow: #d79921;
+  --color-gruvbox-blue: #458588;
+  --color-gruvbox-purple: #b16286;
+  --color-gruvbox-aqua: #689d6a;
+  --color-gruvbox-orange: #d65d0e;
+}
+
+@layer components {
+  .gruvbox-dark-theme-selector-button {
+    background-color: var(--color-gruvbox-bg1);
+    color: var(--color-gruvbox-yellow);
+    outline-style: solid;
+    outline-width: 1px;
+    outline-offset: -1px;
+    outline-color: var(--color-gruvbox-bg3);
+  }
+  .gruvbox-dark-theme-selector-button:focus {
+    outline-style: solid;
+    outline-width: 2px;
+    outline-offset: -2px;
+    outline-color: var(--color-gruvbox-yellow);
+  }
+  .gruvbox-dark-bento-item-outline {
+    outline: 0.5px solid var(--color-gruvbox-bg3);
+  }
+  .gruvbox-dark-focus-option[data-focus] {
+    background-color: var(--color-gruvbox-bg0_h);
+    color: var(--color-gruvbox-green);
+  }
+}
+
+@layer utilities {
+  .gruvbox-dark-text-primary {
+    color: var(--color-gruvbox-yellow);
+  }
+  .gruvbox-dark-text-secondary {
+    color: var(--color-gruvbox-green);
+  }
+  .gruvbox-dark-text-muted {
+    color: var(--color-gruvbox-fg1);
+  }
+  .gruvbox-dark-bg-primary {
+    background-color: var(--color-gruvbox-bg0_h);
+  }
+  .gruvbox-dark-bg-secondary {
+    background-color: var(--color-gruvbox-bg1);
+  }
+}

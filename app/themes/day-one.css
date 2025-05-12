@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+/* { displayName: "Day One", codeName: "day-one", type: "light" }, */
+
+@theme {
+  --color-dayone-bg: #fafafa;
+  --color-dayone-text: #383a42;
+  --color-dayone-accent: #4078f2;
+  --color-dayone-comment: #a0a1a7;
+  --color-dayone-keyword: #a626a4;
+  --color-dayone-string: #50a14f;
+  --color-dayone-number: #986801;
+  --color-dayone-boolean: #c18401;
+}
+
+@layer components {
+  .day-one-theme-selector-button {
+    background-color: #fff;
+    color: var(--color-dayone-accent);
+    outline-style: solid;
+    outline-width: 1px;
+    outline-offset: -1px;
+    outline-color: var(--color-dayone-comment);
+  }
+  .day-one-theme-selector-button:focus {
+    outline-style: solid;
+    outline-width: 2px;
+    outline-offset: -2px;
+    outline-color: var(--color-dayone-accent);
+  }
+  .day-one-bento-item-outline {
+    outline: 0.5px solid var(--color-dayone-comment);
+  }
+  .day-one-focus-option[data-focus] {
+    background-color: var(--color-dayone-bg);
+    color: var(--color-dayone-keyword);
+  }
+}
+
+@layer utilities {
+  .day-one-text-primary {
+    color: var(--color-dayone-accent);
+  }
+  .day-one-text-secondary {
+    color: var(--color-dayone-keyword);
+  }
+  .day-one-text-muted {
+    color: var(--color-dayone-text);
+  }
+  .day-one-bg-primary {
+    background-color: var(--color-dayone-bg);
+  }
+  .day-one-bg-secondary {
+    background-color: #fff;
+  }
+}

@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+/* { displayName: "Solarized Dark", codeName: "solarized-dark", type: "dark" }, */
+
+@theme {
+  --color-solarized-base03: #002b36;
+  --color-solarized-base02: #073642;
+  --color-solarized-base01: #586e75;
+  --color-solarized-base00: #657b83;
+  --color-solarized-base0: #839496;
+  --color-solarized-base1: #93a1a1;
+  --color-solarized-base2: #eee8d5;
+  --color-solarized-base3: #fdf6e3;
+  --color-solarized-yellow: #b58900;
+  --color-solarized-orange: #cb4b16;
+  --color-solarized-red: #dc322f;
+  --color-solarized-magenta: #d33682;
+  --color-solarized-violet: #6c71c4;
+  --color-solarized-blue: #268bd2;
+  --color-solarized-cyan: #2aa198;
+  --color-solarized-green: #859900;
+}
+
+@layer components {
+  .solarized-dark-theme-selector-button {
+    background-color: var(--color-solarized-base02);
+    color: var(--color-solarized-blue);
+    outline-style: solid;
+    outline-width: 1px;
+    outline-offset: -1px;
+    outline-color: var(--color-solarized-base01);
+  }
+  .solarized-dark-theme-selector-button:focus {
+    outline-style: solid;
+    outline-width: 2px;
+    outline-offset: -2px;
+    outline-color: var(--color-solarized-blue);
+  }
+  .solarized-dark-bento-item-outline {
+    outline: 0.5px solid var(--color-solarized-base01);
+  }
+  .solarized-dark-focus-option[data-focus] {
+    background-color: var(--color-solarized-base03);
+    color: var(--color-solarized-green);
+  }
+}
+
+@layer utilities {
+  .solarized-dark-text-primary {
+    color: var(--color-solarized-blue);
+  }
+  .solarized-dark-text-secondary {
+    color: var(--color-solarized-green);
+  }
+  .solarized-dark-text-muted {
+    color: var(--color-solarized-base1);
+  }
+  .solarized-dark-bg-primary {
+    background-color: var(--color-solarized-base03);
+  }
+  .solarized-dark-bg-secondary {
+    background-color: var(--color-solarized-base02);
+  }
+}

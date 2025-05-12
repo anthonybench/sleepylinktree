@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+/* { displayName: "Monokai", codeName: "monokai", type: "dark" }, */
+
+@theme {
+  --color-monokai-bg: #272822;
+  --color-monokai-comment: #75715e;
+  --color-monokai-foreground: #f8f8f2;
+  --color-monokai-yellow: #f0e68c;
+  --color-monokai-pink: #f92672;
+  --color-monokai-cyan: #66d9ef;
+  --color-monokai-green: #a6e22e;
+  --color-monokai-orange: #fd971f;
+  --color-monokai-purple: #ae81ff;
+}
+
+@layer components {
+  .monokai-theme-selector-button {
+    background-color: var(--color-monokai-bg);
+    color: var(--color-monokai-yellow);
+    outline-style: solid;
+    outline-width: 1px;
+    outline-offset: -1px;
+    outline-color: var(--color-monokai-comment);
+  }
+  .monokai-theme-selector-button:focus {
+    outline-style: solid;
+    outline-width: 2px;
+    outline-offset: -2px;
+    outline-color: var(--color-monokai-yellow);
+  }
+  .monokai-bento-item-outline {
+    outline: 0.5px solid var(--color-monokai-comment);
+  }
+  .monokai-focus-option[data-focus] {
+    background-color: #000; /* A slightly darker shade for focus */
+    color: var(--color-monokai-green);
+  }
+}
+
+@layer utilities {
+  .monokai-text-primary {
+    color: var(--color-monokai-yellow);
+  }
+  .monokai-text-secondary {
+    color: var(--color-monokai-green);
+  }
+  .monokai-text-muted {
+    color: var(--color-monokai-foreground);
+  }
+  .monokai-bg-primary {
+    background-color: var(--color-monokai-bg);
+  }
+  .monokai-bg-secondary {
+    background-color: #000; /* A slightly darker shade */
+  }
+}

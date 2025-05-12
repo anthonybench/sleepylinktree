@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+/* { displayName: "Dracula", codeName: "dracula", type: "dark" }, */
+
 @theme {
   --color-nosferatu: #292b36;
   --color-aro: #454759;
@@ -24,6 +26,13 @@
     outline-offset: -2px;
     outline-color: var(--color-dracula);
   }
+  .dracula-bento-item-outline {
+    outline: 0.5px solid var(--color-voncount);
+  }
+  .dracula-focus-option[data-focus] {
+    background-color: var(--color-nosferatu);
+    color: var(--color-buffy);
+  }
 }
 
 @layer utilities {
@@ -33,10 +42,7 @@
   .dracula-text-secondary {
     color: var(--color-buffy);
   }
-  .dracula-text-muted-dark {
-    color: var(--color-voncount);
-  }
-  .dracula-text-muted-light {
+  .dracula-text-muted {
     color: var(--color-cullen);
   }
   .dracula-bg-primary {
@@ -44,9 +50,5 @@
   }
   .dracula-bg-secondary {
     background-color: var(--color-aro);
-  }
-  .dracula-focus-option[data-focus] {
-    background-color: var(--color-nosferatu);
-    color: var(--color-buffy);
   }
 }
