@@ -52,8 +52,11 @@
   .solarized-light-text-secondary {
     color: var(--color-solarized-green);
   }
-  .solarized-light-text-muted {
+  .solarized-light-text-muted-light {
     color: var(--color-solarized-base0);
+  }
+  .solarized-light-text-muted-dark {
+    color: var(--color-solarized-base1);
   }
   .solarized-light-bg-primary {
     background-color: var(--color-solarized-base3);

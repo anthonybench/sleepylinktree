@@ -45,8 +45,11 @@
   .monokai-text-secondary {
     color: var(--color-monokai-green);
   }
-  .monokai-text-muted {
+  .monokai-text-muted-light {
     color: var(--color-monokai-foreground);
+  }
+  .monokai-text-muted-dark {
+    color: var(--color-monokai-comment);
   }
   .monokai-bg-primary {
     background-color: var(--color-monokai-bg);

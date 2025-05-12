@@ -42,8 +42,11 @@
   .dracula-text-secondary {
     color: var(--color-buffy);
   }
-  .dracula-text-muted {
+  .dracula-text-muted-light {
     color: var(--color-cullen);
+  }
+  .dracula-text-muted-dark {
+    color: var(--color-voncount);
   }
   .dracula-bg-primary {
     background-color: var(--color-nosferatu);

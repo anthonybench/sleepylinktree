@@ -54,8 +54,11 @@
   .gruvbox-dark-text-secondary {
     color: var(--color-gruvbox-green);
   }
-  .gruvbox-dark-text-muted {
+  .gruvbox-dark-text-muted-light {
     color: var(--color-gruvbox-fg1);
+  }
+  .gruvbox-dark-text-muted-dark {
+    color: var(--color-gruvbox-bg3);
   }
   .gruvbox-dark-bg-primary {
     background-color: var(--color-gruvbox-bg0_h);

@@ -66,7 +66,7 @@ const BentoGrid = () => {
             >
               My personal blog
             </p>
-            <p className={`mt-2 max-w-lg text-sm/6 ${theme}-text-muted`}>
+            <p className={`mt-2 max-w-lg text-sm/6 ${theme}-text-muted-light`}>
               Build with Next.js, Tailwind CSS, and TypeScript.
             </p>
           </div>
@@ -92,7 +92,7 @@ const BentoGrid = () => {
             >
               Join my professional network!
             </p>
-            <p className={`mt-2 max-w-lg text-sm/6 ${theme}-text-muted`}>
+            <p className={`mt-2 max-w-lg text-sm/6 ${theme}-text-muted-light`}>
               Connect with me on LinkedIn to peek my career and previous
               experiences.
             </p>
@@ -119,7 +119,7 @@ const BentoGrid = () => {
             >
               My Python packages
             </p>
-            <p className={`mt-2 max-w-lg text-sm/6 ${theme}-text-muted`}>
+            <p className={`mt-2 max-w-lg text-sm/6 ${theme}-text-muted-light`}>
               Check out my published python utilities.
             </p>
           </div>
@@ -145,7 +145,7 @@ const BentoGrid = () => {
             >
               My GitHub profile
             </p>
-            <p className={`mt-2 max-w-lg text-sm/6 ${theme}-text-muted`}>
+            <p className={`mt-2 max-w-lg text-sm/6 ${theme}-text-muted-light`}>
               Check out my open source projects and contributions.
             </p>
           </div>

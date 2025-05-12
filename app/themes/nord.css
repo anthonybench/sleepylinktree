@@ -52,8 +52,11 @@
   .nord-text-secondary {
     color: var(--color-nord7);
   }
-  .nord-text-muted {
+  .nord-text-muted-light {
     color: var(--color-nord4);
+  }
+  .nord-text-muted-dark {
+    color: var(--color-nord3);
   }
   .nord-bg-primary {
     background-color: var(--color-nord0);

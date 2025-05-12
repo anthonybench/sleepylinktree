@@ -44,8 +44,11 @@
   .day-one-text-secondary {
     color: var(--color-dayone-keyword);
   }
-  .day-one-text-muted {
+  .day-one-text-muted-light {
     color: var(--color-dayone-text);
+  }
+  .day-one-text-muted-dark {
+    color: var(--color-dayone-comment);
   }
   .day-one-bg-primary {
     background-color: var(--color-dayone-bg);
