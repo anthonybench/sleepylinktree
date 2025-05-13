@@ -2,7 +2,6 @@
 
 - bento-grid images
 - better bento-grid descriptive paragraphs
-- implement fetch_resume() modal
 
 ## non-critical
 

@@ -54,4 +54,7 @@
   .dracula-bg-secondary {
     background-color: var(--color-aro);
   }
+  .dracula-bg-hightlight {
+    background-color: var(--color-dracula);
+  }
 }
