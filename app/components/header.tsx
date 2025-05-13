@@ -1,9 +1,13 @@
+"use client";
 import { useTheme } from "@/app/themes/switch-board";
 import ThemeSelector from "@/app/components/theme-selector";
 import { SparklesIcon } from "@heroicons/react/24/solid";
+import { useState } from "react";
+import ResumeModal from "../components/resume-modal";
 
 const Header = () => {
   const theme = useTheme().theme;
+  const [resumeOpen, setResumeOpen] = useState(false);
   return (
     <div className="flex flex-col justify-end w-full">
       <div className="md:flex md:justify-between">
@@ -20,12 +24,18 @@ const Header = () => {
               aria-hidden="true"
               className={`${theme}-text-primary size-5 inline`}
             />
-            <em>fetch_resume()</em>
+            <button
+              onClick={() => setResumeOpen(true)}
+              className=" px-1 rounded"
+            >
+              <em>fetch_resume()</em>
+            </button>
             <SparklesIcon
               aria-hidden="true"
               className={`${theme}-text-primary size-5 inline`}
             />
           </code>
+          <ResumeModal open={resumeOpen} setOpen={setResumeOpen} />
         </span>
         <span className="mt-5 sm:w-4/12 md:w-5/12 lg:w-4/12 text-pretty font-semibold tracking-tight">
           <ThemeSelector />
