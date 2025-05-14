@@ -15,6 +15,8 @@ export default function ResumeModal({
   setOpen: (open: boolean) => void;
 }) {
   const theme = useTheme().theme;
+  const resumeURL =
+    "https://sleepysoft-global-fileserver.s3.us-west-2.amazonaws.com/Isaac_Yep_Resume.pdf";
   return (
     <Dialog open={open} onClose={setOpen} className="relative z-10">
       <DialogBackdrop
@@ -42,7 +44,7 @@ export default function ResumeModal({
                 </div>
               </div>
               <iframe
-                src="https://sleepysoft-global-fileserver.s3.us-west-2.amazonaws.com/Isaac_Yep_Resume.pdf"
+                src={resumeURL}
                 width="100%"
                 height="600rem"
                 className={`pt-4`}

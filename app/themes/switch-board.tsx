@@ -1,5 +1,6 @@
 "use client";
 import { createContext, useState, ReactNode, useContext } from "react";
+import { JetBrains_Mono, Comfortaa } from "next/font/google";
 
 // Theme Object Schema
 type ThemeType = {
@@ -8,7 +9,8 @@ type ThemeType = {
   type: "light" | "dark";
 };
 
-//───Themes───────────────────
+//───⚙️ CONFIG────────────────
+// Color Themes
 export const themes: ThemeType[] = [
   { displayName: "Dracula", codeName: "dracula", type: "dark" },
   { displayName: "Nord", codeName: "nord", type: "dark" },
@@ -24,6 +26,18 @@ export const themes: ThemeType[] = [
   { displayName: "Day One", codeName: "day-one", type: "light" },
 ];
 export const defaultTheme = "dracula"; // use codeName
+
+// Fonts
+const comfortaa = Comfortaa({
+  variable: "--font-comfortaa",
+  subsets: ["latin"],
+});
+const jetBrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains-mono",
+  subsets: ["latin"],
+});
+const defaultFont = comfortaa;
+export const codeFont = jetBrainsMono;
 //────────────────────────────
 
 // Load Themes
@@ -56,7 +70,11 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
-      {children}
+      <body
+        className={`${defaultFont.className} antialiased ${theme}-bg-primary`}
+      >
+        {children}
+      </body>
     </ThemeContext.Provider>
   );
 };

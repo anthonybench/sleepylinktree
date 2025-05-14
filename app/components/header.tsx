@@ -1,8 +1,8 @@
 "use client";
+import { useState } from "react";
+import { SparklesIcon } from "@heroicons/react/24/solid";
 import { useTheme } from "@/app/themes/switch-board";
 import ThemeSelector from "@/app/components/theme-selector";
-import { SparklesIcon } from "@heroicons/react/24/solid";
-import { useState } from "react";
 import ResumeModal from "../components/resume-modal";
 
 const Header = () => {
