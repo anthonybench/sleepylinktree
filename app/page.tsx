@@ -1,7 +1,51 @@
 "use client";
-import { useTheme } from "@/app/themes/switch-board";
+import { useTheme, fetchTheme, codeFont } from "@/app/themes/switch-board";
 import Header from "@/app/components/header";
 import BentoGrid from "@/app/components/bento-grid";
+import Image from "next/image";
+import { SparklesIcon } from "@heroicons/react/24/solid";
+
+// Image
+const GithubOktocat = (themeType: string) => {
+  const inverse = themeType === "dark" ? "light" : "dark";
+  return (
+    <Image
+      src={`/github-oktocat-${inverse}.svg`}
+      alt="SleepyBlog Logo"
+      width={80}
+      height={80}
+      // className="h-80 object-cover object-left"
+    />
+  );
+};
+
+// "See this site's source" wrapper
+const SourceWrapper = () => {
+  const theme = useTheme().theme;
+  const themeType = fetchTheme(theme).type;
+  return (
+    <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+      <div className={`flex flex-col items-center justify-center pt-8`}>
+        {GithubOktocat(themeType)}
+        <span className="pt-3">
+          <SparklesIcon
+            aria-hidden="true"
+            className={`${theme}-text-secondary size-5 inline`}
+          />{" "}
+          <span
+            className={`${codeFont.className} ${theme}-text-muted-light text-sm`}
+          >
+            <em>See this site's source </em>
+          </span>
+          <SparklesIcon
+            aria-hidden="true"
+            className={`${theme}-text-secondary size-5 inline`}
+          />
+        </span>
+      </div>
+    </a>
+  );
+};
 
 export default function Home() {
   const theme = useTheme().theme;
@@ -11,6 +55,7 @@ export default function Home() {
         <Header />
         <BentoGrid />
       </div>
+      {SourceWrapper()}
     </div>
   );
 }

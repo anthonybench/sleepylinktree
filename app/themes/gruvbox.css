@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* { displayName: "Gruvbox Light", codeName: "gruvbox-light", type: "light" }, */
+/* { displayName: "Gruvbox Light", codeName: "gruvbox", type: "light" }, */
 
 @theme {
   --color-gruvbox-bg0_h: #fbf1c7;
@@ -24,7 +24,7 @@
 }
 
 @layer components {
-  .gruvbox-light-theme-selector-button {
+  .gruvbox-theme-selector-button {
     background-color: var(--color-gruvbox-bg1);
     color: var(--color-gruvbox-blue);
     outline-style: solid;
@@ -32,38 +32,38 @@
     outline-offset: -1px;
     outline-color: var(--color-gruvbox-bg3);
   }
-  .gruvbox-light-theme-selector-button:focus {
+  .gruvbox-theme-selector-button:focus {
     outline-style: solid;
     outline-width: 2px;
     outline-offset: -2px;
     outline-color: var(--color-gruvbox-blue);
   }
-  .gruvbox-light-bento-item-outline {
+  .gruvbox-bento-item-outline {
     outline: 0.5px solid var(--color-gruvbox-bg3);
   }
-  .gruvbox-light-focus-option[data-focus] {
+  .gruvbox-focus-option[data-focus] {
     background-color: var(--color-gruvbox-bg0_h);
     color: var(--color-gruvbox-green);
   }
 }
 
 @layer utilities {
-  .gruvbox-light-text-primary {
+  .gruvbox-text-primary {
     color: var(--color-gruvbox-blue);
   }
-  .gruvbox-light-text-secondary {
+  .gruvbox-text-secondary {
     color: var(--color-gruvbox-green);
   }
-  .gruvbox-light-text-muted-light {
+  .gruvbox-text-muted-light {
     color: var(--color-gruvbox-fg1);
   }
-  .gruvbox-light-text-muted-dark {
+  .gruvbox-text-muted-dark {
     color: var(--color-gruvbox-fg3);
   }
-  .gruvbox-light-bg-primary {
+  .gruvbox-bg-primary {
     background-color: var(--color-gruvbox-bg0_h);
   }
-  .gruvbox-light-bg-secondary {
+  .gruvbox-bg-secondary {
     background-color: var(--color-gruvbox-bg1);
   }
 }

@@ -16,13 +16,12 @@ export const themes: ThemeType[] = [
   { displayName: "Nord", codeName: "nord", type: "dark" },
   { displayName: "Solarized Dark", codeName: "solarized-dark", type: "dark" },
   { displayName: "Monokai", codeName: "monokai", type: "dark" },
-  { displayName: "Gruvbox Dark", codeName: "gruvbox-dark", type: "dark" },
   {
     displayName: "Solarized Light",
     codeName: "solarized-light",
     type: "light",
   },
-  { displayName: "Gruvbox Light", codeName: "gruvbox-light", type: "light" },
+  { displayName: "Gruvbox", codeName: "gruvbox", type: "light" },
   { displayName: "Day One", codeName: "day-one", type: "light" },
 ];
 export const defaultTheme = "dracula"; // use codeName

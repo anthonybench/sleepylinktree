@@ -1,7 +1,9 @@
 import { useTheme, fetchTheme, codeFont } from "@/app/themes/switch-board";
+import GithubActivityTracker from "@/app/components/github-activity-tracker";
 import Image from "next/image";
+import "@/app/utils/debug.css";
 
-// "built with" util
+// Utilities
 const BuiltWith = (tools: string[]) => {
   const theme = useTheme().theme;
   return (
@@ -34,6 +36,7 @@ const SleepyBlogLogo = (themeType: string) => {
 };
 
 const GithubLogo = (themeType: string) => {
+  // TODO: replace with github activity tracker
   const inverse = themeType === "dark" ? "light" : "dark";
   return (
     <Image
@@ -46,24 +49,22 @@ const GithubLogo = (themeType: string) => {
   );
 };
 
-const PyPILogo = (themeType: string) => {
-  // const inverse = themeType === "dark" ? "light" : "dark"; //can only find dark one...
+const PyPILogo = () => {
   return (
     <Image
-      src={`/pypi-full-dark.png`}
+      src={`/pypi-logo.png`}
       alt="PyPI Logo"
       width={1100}
       height={1100}
-      className="h-80 object-cover"
+      className="h-80 object-cover pl-1"
     />
   );
 };
 
-const LinkedInLogo = (themeType: string) => {
-  const inverse = themeType === "dark" ? "light" : "dark";
+const LinkedInLogo = () => {
   return (
     <Image
-      src={`/linkedin-in-${inverse}.png`}
+      src={`/linkedin-in-blue.png`}
       alt="LinkedIn Logo"
       width={1100}
       height={1100}
@@ -83,17 +84,12 @@ const BentoGrid = () => {
   const pypiURL = "https://pypi.org/user/sleepyboy";
   return (
     <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
-      {/*  */}
+      {/* sleepyblog cell */}
       <div className="flex p-px lg:col-span-4">
         <div
           className={`overflow-hidden rounded-lg ${theme}-bg-secondary ${theme}-bento-item-outline max-lg:rounded-t-[2rem] lg:rounded-tl-[2rem]`}
         >
           <a href={sleepyblogURL} target="_blank" rel="noopener noreferrer">
-            {/* <img
-              alt="sleepyblog logo"
-              src="https://tailwindcss.com/plus-assets/img/component-images/bento-02-releases.png"
-              className="h-80 object-cover object-left"
-            /> */}
             {SleepyBlogLogo(themeType)}
           </a>
           <div className="p-10">
@@ -115,18 +111,13 @@ const BentoGrid = () => {
           </div>
         </div>
       </div>
-      {/*  */}
+      {/* linkedin cell */}
       <div className="flex p-px lg:col-span-2">
         <div
           className={`overflow-hidden rounded-lg ${theme}-bg-secondary ${theme}-bento-item-outline lg:rounded-tr-[2rem]`}
         >
-          {/* <img
-            alt="wtf"
-            src="https://tailwindcss.com/plus-assets/img/component-images/bento-02-integrations.png"
-            className="h-80 object-cover"
-          /> */}
           <a href={linkedinURL} target="_blank" rel="noopener noreferrer">
-            {LinkedInLogo(themeType)}
+            {LinkedInLogo()}
           </a>
           <div className="p-10">
             <h3 className={`text-sm/4 font-semibold ${theme}-text-secondary`}>
@@ -144,18 +135,13 @@ const BentoGrid = () => {
           </div>
         </div>
       </div>
-      {/*  */}
+      {/* pypi cell */}
       <div className="flex p-px lg:col-span-2">
         <div
           className={`overflow-hidden rounded-lg ${theme}-bg-secondary ${theme}-bento-item-outline lg:rounded-bl-[2rem]`}
         >
-          {/* <img
-            alt=""
-            src="https://tailwindcss.com/plus-assets/img/component-images/bento-02-security.png"
-            className="h-80 object-cover"
-          /> */}
           <a href={pypiURL} target="_blank" rel="noopener noreferrer">
-            {PyPILogo(themeType)}
+            {PyPILogo()}
           </a>
           <div className="p-10">
             <h3 className={`text-sm/4 font-semibold ${theme}-text-secondary`}>
@@ -174,18 +160,19 @@ const BentoGrid = () => {
           </div>
         </div>
       </div>
-      {/*  */}
+      {/* github cell */}
       <div className="flex p-px lg:col-span-4">
         <div
           className={`overflow-hidden rounded-lg ${theme}-bg-secondary ${theme}-bento-item-outline max-lg:rounded-b-[2rem] lg:rounded-br-[2rem]`}
         >
-          {/* <img
-            alt=""
-            src="https://tailwindcss.com/plus-assets/img/component-images/bento-02-performance.png"
-            className="h-80 object-cover object-left"
-          /> */}
-          <a href={githubURL} target="_blank" rel="noopener noreferrer">
-            {GithubLogo(themeType)}
+          <a
+            href={githubURL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className=""
+          >
+            {/* {GithubLogo(themeType)} */}
+            {GithubActivityTracker(themeType)}
           </a>
           <div className="p-10">
             <h3 className={`text-sm/4 font-semibold ${theme}-text-secondary`}>

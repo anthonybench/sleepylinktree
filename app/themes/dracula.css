@@ -33,6 +33,18 @@
     background-color: var(--color-nosferatu);
     color: var(--color-buffy);
   }
+  /* doesn't work */
+  /* .hover\:dracula-bg-modal-btn-hover:hover {
+    background-color: var(--color-buffy);
+    color: var(--color-buffy);
+  } */
+  /* also doesn't work */
+  /* @variants hover {
+    .dracula-bg-modal-btn-hover {
+      background-color: var(--color-buffy);
+      color: var(--color-buffy);
+    } */
+  /* } */
 }
 
 @layer utilities {
