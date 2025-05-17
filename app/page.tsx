@@ -14,7 +14,6 @@ const GithubOktocat = (themeType: string) => {
       alt="SleepyBlog Logo"
       width={80}
       height={80}
-      // className="h-80 object-cover object-left"
     />
   );
 };
@@ -55,7 +54,7 @@ export default function Home() {
         <Header />
         <BentoGrid />
       </div>
-      {SourceWrapper()}
+      <SourceWrapper />
     </div>
   );
 }

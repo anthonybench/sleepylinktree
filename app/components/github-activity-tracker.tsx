@@ -1,7 +1,7 @@
 "use client";
 import "@/app/utils/debug.css";
 import GitHubCalendar from "react-github-calendar";
-import { useTheme, fetchTheme, codeFont } from "@/app/themes/switch-board";
+import { codeFont } from "@/app/themes/switch-board";
 
 // Utils
 const selectLastHalfYear = (contributions: any) => {
@@ -100,7 +100,6 @@ const GithubActivityTracker = (themeType: any) => {
           transformData={selectLastQuarter}
           hideMonthLabels
           hideColorLegend
-          // hideTotalCount
           colorScheme={themeType}
           blockSize={25}
           style={{

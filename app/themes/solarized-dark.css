@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-/* { displayName: "Solarized Dark", codeName: "solarized-dark", type: "dark" }, */
-
 @theme {
   --color-solarized-base03: #002b36;
   --color-solarized-base02: #073642;
@@ -63,5 +61,9 @@
   }
   .solarized-dark-bg-secondary {
     background-color: var(--color-solarized-base02);
+  }
+  .solarized-dark-modal-btn-hover:hover {
+    background-color: var(--color-solarized-base1);
+    color: var(--color-solarized-blue);
   }
 }

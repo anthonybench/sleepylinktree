@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-/* { displayName: "Gruvbox Light", codeName: "gruvbox", type: "light" }, */
-
 @theme {
   --color-gruvbox-bg0_h: #fbf1c7;
   --color-gruvbox-bg0_s: #f9f5d7;
@@ -65,5 +63,9 @@
   }
   .gruvbox-bg-secondary {
     background-color: var(--color-gruvbox-bg1);
+  }
+  .gruvbox-modal-btn-hover:hover {
+    background-color: var(--color-gruvbox-bg2);
+    color: var(--color-gruvbox-blue);
   }
 }

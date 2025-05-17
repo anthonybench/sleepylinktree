@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-/* { displayName: "Day One", codeName: "day-one", type: "light" }, */
-
 @theme {
   --color-dayone-bg: #fafafa;
   --color-dayone-text: #383a42;
@@ -55,5 +53,9 @@
   }
   .day-one-bg-secondary {
     background-color: #fff;
+  }
+  .day-one-modal-btn-hover:hover {
+    background-color: var(--color-dayone-comment);
+    color: var(--color-dayone-keyword);
   }
 }

@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-/* { displayName: "Dracula", codeName: "dracula", type: "dark" }, */
-
 @theme {
   --color-nosferatu: #292b36;
   --color-aro: #454759;
@@ -33,18 +31,6 @@
     background-color: var(--color-nosferatu);
     color: var(--color-buffy);
   }
-  /* doesn't work */
-  /* .hover\:dracula-bg-modal-btn-hover:hover {
-    background-color: var(--color-buffy);
-    color: var(--color-buffy);
-  } */
-  /* also doesn't work */
-  /* @variants hover {
-    .dracula-bg-modal-btn-hover {
-      background-color: var(--color-buffy);
-      color: var(--color-buffy);
-    } */
-  /* } */
 }
 
 @layer utilities {
@@ -66,7 +52,8 @@
   .dracula-bg-secondary {
     background-color: var(--color-aro);
   }
-  .dracula-bg-hightlight {
-    background-color: var(--color-dracula);
+  .dracula-modal-btn-hover:hover {
+    background-color: var(--color-cullen);
+    color: var(--color-aro);
   }
 }

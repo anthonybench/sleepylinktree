@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-/* { displayName: "Monokai", codeName: "monokai", type: "dark" }, */
-
 @theme {
   --color-monokai-bg: #272822;
   --color-monokai-comment: #75715e;
@@ -56,5 +54,9 @@
   }
   .monokai-bg-secondary {
     background-color: #000; /* A slightly darker shade */
+  }
+  .monokai-modal-btn-hover:hover {
+    background-color: var(--color-monokai-comment);
+    color: var(--color-monokai-green);
   }
 }

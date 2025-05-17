@@ -59,7 +59,7 @@ export default function ResumeModal({
               <button
                 type="button"
                 onClick={() => setOpen(false)}
-                className={`inline-flex w-full justify-center rounded-md ${theme}-bg-primary px-3 py-2 text-sm font-semibold ${theme}-text-muted-light shadow-2xl hover:bg-indigo-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600`}
+                className={`inline-flex w-full justify-center rounded-md ${theme}-bg-primary px-3 py-2 text-sm font-semibold ${theme}-text-muted-light shadow-2xl ${theme}-modal-btn-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2`}
               >
                 ⏎
               </button>

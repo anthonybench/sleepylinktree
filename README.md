@@ -1,12 +1,12 @@
 # **SleepyLinkTree**
 
-_A landing page for professional/career software interfacing_
+_A landing page for professional/career software interfacing_.
 
 <br />
 
 ## **Welcome to SleepyLinkTree!**
 
-TODO
+This project is purposed for building a static website export for my [my Github Pages](https://anthonybench.github.io/). It differs in purpose from [SleepyBlog](https://sleepyblog.org) in that this project is somewhere to send recruitment/professional-interactions for my software career specifically, whereas SleepyBlog is quite general in it's content domain.
 
 <br />
 
@@ -14,7 +14,7 @@ TODO
 
 - [ReacT Github Calendar](https://grubersjoe.github.io/react-github-calendar/#/?user=anthonybench)
 - [TailwindUI](https://tailwindcss.com/plus/ui-blocks/application-ui)
-- [Next.js `15.3`](https://nextjs.org/docs)
+- [Next.js](https://nextjs.org/docs)
 - [HeadlessUI](<[URL](https://headlessui.com/react/listbox#component-api)>)
 - [HeroIcons](https://heroicons.com/solid)
 
@@ -27,6 +27,8 @@ TODO
 <!-- badge cluster -->
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/anthonybench/TODO)
+![GitHub package.json prod dependency version](https://img.shields.io/github/package-json/dependency-version/anthonybench/sleepyblog/next)
+
 TODO [SHIELD](https://shields.io/)
 
 <!-- / -->

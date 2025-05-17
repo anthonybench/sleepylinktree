@@ -1,14 +1,12 @@
-## mvp
+## cko
 
-- modal button hover needs theme integration
-- readme
 - metadata & [opengraph](https://nextjs.org/docs/app/api-reference/file-conventions/metadata/opengraph-image)
+
+## post-cko
+
 - setup remote repository
   - update link in SourceWrapper()
-
-## deploy
-
-- static build
+- readme shields
 - [deploy to github pages](https://github.com/gregrickaby/nextjs-github-pages)
 
 ## later
@@ -17,3 +15,4 @@
 - more themes
   - halcyon: light
   - overcast: light
+- better shield.io templating

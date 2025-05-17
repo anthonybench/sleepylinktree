@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-/* { displayName: "Nord", codeName: "nord", type: "dark" }, */
-
 @theme {
   --color-nord0: #2e3440;
   --color-nord1: #3b4252;
@@ -63,5 +61,9 @@
   }
   .nord-bg-secondary {
     background-color: var(--color-nord1);
+  }
+  .nord-modal-btn-hover:hover {
+    background-color: var(--color-nord4);
+    color: var(--color-nord9);
   }
 }
