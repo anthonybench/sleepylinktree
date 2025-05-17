@@ -1,6 +1,9 @@
 ## cko
 
-- metadata & [opengraph](https://nextjs.org/docs/app/api-reference/file-conventions/metadata/opengraph-image)
+- metadata
+  - robots.txt
+  - manifest.txt
+  - opengraph
 
 ## post-cko
 
