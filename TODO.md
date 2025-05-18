@@ -1,9 +1,6 @@
 ## cko
 
-- metadata
-  - robots.txt
-  - manifest.txt
-  - opengraph
+- opengraph
 
 ## post-cko
 

@@ -1,0 +1,16 @@
+{
+  "name": "Sleepy Linktree",
+  "short_name": "SleepyLinktree",
+  "icons": [
+    {
+      "src": "/sleepyboy-technologist-dark.png",
+      "sizes": "2500x2500",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#bc93f9",
+  "background_color": "#292b36",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/"
+}
