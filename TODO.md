@@ -4,9 +4,6 @@
 
 ## post-cko
 
-- setup remote repository
-  - update link in SourceWrapper()
-- readme shields
 - [deploy to github pages](https://github.com/gregrickaby/nextjs-github-pages)
 
 ## later
@@ -15,4 +12,3 @@
 - more themes
   - halcyon: light
   - overcast: light
-- better shield.io templating

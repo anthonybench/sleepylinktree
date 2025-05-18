@@ -23,7 +23,11 @@ const SourceWrapper = () => {
   const theme = useTheme().theme;
   const themeType = fetchTheme(theme).type;
   return (
-    <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+    <a
+      href="https://github.com/anthonybench/sleepylinktree/blob/main/README.md"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <div className={`flex flex-col items-center justify-center pt-8`}>
         {GithubOktocat(themeType)}
         <span className="pt-3">

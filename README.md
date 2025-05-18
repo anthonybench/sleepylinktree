@@ -26,8 +26,12 @@ This project is purposed for building a static website export for my [my Github 
 
 <!-- badge cluster -->
 
-![GitHub repo size](https://img.shields.io/github/repo-size/anthonybench/TODO)
-![GitHub package.json prod dependency version](https://img.shields.io/github/package-json/dependency-version/anthonybench/sleepyblog/next)
+![GitHub package.json prod dependency version](https://img.shields.io/github/package-json/dependency-version/anthonybench/sleepylinktree/next)
+![GitHub package.json prod dependency version](https://img.shields.io/github/package-json/dependency-version/anthonybench/sleepylinktree/react-github-calendar)
+![GitHub package.json prod dependency version](https://img.shields.io/github/package-json/dependency-version/anthonybench/sleepylinktree/@headlessui/react)
+![GitHub package.json prod dependency version](https://img.shields.io/github/package-json/dependency-version/anthonybench/sleepylinktree/@heroicons/react)
+![GitHub License](https://img.shields.io/github/license/anthonybench/sleepylinktree)
+![GitHub repo size](https://img.shields.io/github/repo-size/anthonybench/sleepylinktree)
 
 TODO [SHIELD](https://shields.io/)
 
