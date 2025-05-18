@@ -1,9 +1,3 @@
-## cko
-
-- opengraph
-
-## post-cko
-
 - [deploy to github pages](https://github.com/gregrickaby/nextjs-github-pages)
 
 ## later
