@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 import "@/app/utils/debug.css";
 import GitHubCalendar from "react-github-calendar";

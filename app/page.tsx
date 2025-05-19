@@ -38,7 +38,7 @@ const SourceWrapper = () => {
           <span
             className={`${codeFont.className} ${theme}-text-muted-light text-sm`}
           >
-            <em>See this site's source </em>
+            <em>See this site&apos;s source </em>
           </span>
           <SparklesIcon
             aria-hidden="true"

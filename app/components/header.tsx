@@ -14,7 +14,7 @@ const Header = () => {
         <span
           className={`${theme}-text-primary mt-2 max-w-lg text-pretty text-4xl font-semibold tracking-tight sm:text-5xl`}
         >
-          Hi, I'm Isaac 👋
+          Hi, I&apos;m Isaac 👋
         </span>
         <span
           className={`${theme}-text-secondary hidden lg:inline mt-10 text-pretty font-semibold tracking-tight`}
