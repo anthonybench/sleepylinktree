@@ -6,3 +6,6 @@
 - more themes
   - halcyon: light
   - overcast: light
+- third bento-grid row
+  - dockerhub
+  - npm
